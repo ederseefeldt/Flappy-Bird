@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Pixel;
+    src: url("../fontes/Pixel.ttf");
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+[flappy] {
+    position: relative;
+    width: 1200px;
+    height: 720px;
+    background-color: skyblue;
+    border: 0.2vw solid black;
+    overflow: hidden;
+}
+
+.passaro {
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 2vw);
+}
+
+.barreiras {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.barreira {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.barreira .corpo {
+    width: 110px;
+    border-left: 0.2vw solid black;
+    border-right: 0.2vw solid black;
+    background: #63a500;
+}
+
+.barreira .borda {
+    height: 50px;
+    width: 130px;
+    border: 0.2vw solid black;
+    background: #63a500;
+}
+
+.progresso {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: white;
+    z-index: 100;
+}
